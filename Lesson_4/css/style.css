@@ -1,0 +1,183 @@
+/* Підключення шрифтів */
+/* В кінці додати &display=swap */
+
+/* Шрифт Roboto */
+@import url('https://fonts.googleapis.com/css?family=Roboto:regular,italic,700,900&display=swap');
+/* --------------------------------------------------------------------------------------------------- */
+
+/* Шрифт Lato */
+/* Regular */
+@font-face {
+	font-family: 'Lato';
+	src: url('../fonts/Lato-Regular.woff2') format('woff2'), url('../fonts/Lato-Regular.woff') format('woff');
+	font-weight: 400;
+	font-style: normal;
+	font-display: swap;
+}
+/* Bold */
+@font-face {
+	font-family: 'Lato';
+	src: url('../fonts/Lato-Bold.woff2') format('woff2'), url('../fonts/Lato-Bold.woff') format('woff');
+	font-weight: 700;
+	font-style: normal;
+	font-display: swap;
+}
+/* Black */
+@font-face {
+	font-family: 'Lato';
+	src: url('../fonts/Lato-Black.woff2') format('woff2'), url('../fonts/Lato-Black.woff') format('woff');
+	font-weight: 900;
+	font-style: normal;
+	font-display: swap;
+}
+/* ----------------------------------------------------------------------------------------------------- */
+/* Шрифт Larsseit */
+/* Regular */
+@font-face {
+	font-family: 'Larsseit';
+	src: url('../fonts/Larsseit.woff2') format('woff2'), url('../fonts/Larsseit.woff') format('woff');
+	font-weight: 400;
+	font-style: normal;
+	font-display: swap;
+}
+/* Medium */
+@font-face {
+	font-family: 'Larsseit';
+	src: url('../fonts/Larsseit-Medium.woff2') format('woff2'), url('../fonts/Larsseit-Medium.woff') format('woff');
+	font-weight: 500;
+	font-style: normal;
+	font-display: swap;
+}
+/* Bold */
+@font-face {
+	font-family: 'Larsseit';
+	src: url('../fonts/Larsseit-Bold.woff2') format('woff2'), url('../fonts/Larsseit-Bold.woff') format('woff');
+	font-weight: 700;
+	font-style: normal;
+	font-display: swap;
+}
+/* ----------------------------------------------------------------------------------------------------------- */
+
+/* Основні стилі */
+
+.title {
+	font-family: 'Oswald';
+	font-weight: 700;
+}
+ul li{
+	color: blue;
+	font-family: 'Roboto';
+	font-weight: 700;
+}
+div p{
+	font-family: 'Lato';
+	font-weight: 900;
+}
+h3{
+	font-family: 'Larsseit';
+	font-weight: 500;
+}
+.x1-title {
+	color: grey;
+}
+.x1-text,
+.x4-text {
+	color: violet;
+}
+.x2 h3 {
+	color: green;
+}
+
+.x2-text.grey {
+	color: grey;
+}
+.x3-title{
+	color: darkgoldenrod;
+}
+.x3 p{
+	color: brown;
+}
+.x4-title {
+	color: green;
+}
+.x4-text {
+	font-weight: 400;
+}
+[id='x5']{
+	color: red;
+}
+
+.x6-title {
+	color: rosybrown;
+}
+.x6 p {
+	color: burlywood;
+}
+.x7 h3 {
+	color: rgb(9, 9, 139);
+}
+.x7-text, 
+.series-1-text {
+	color: blueviolet;
+}
+.series-1-title {
+	color: blue;
+}
+.series-2-title {
+	color: red;
+}
+.series-2 p{
+	color: darkcyan;
+}
+
+.series-3-title,
+.series-4-title {
+	color: chartreuse;
+}
+p.series-3-text{
+	color: red;
+}
+.series-4-text {
+	color: coral;
+}
+.series-5 span{
+	color: chocolate;
+}
+.series-5-title {
+	color: teal;
+	font-weight: 700;
+}
+.series-5-text {
+	color: gold;
+}
+
+.series-6-title {
+	color: navy;
+}
+div .series-6-text {
+	color: hotpink;
+}
+
+.series-7-title {
+	color: blue;
+	font-weight: 400;
+}
+.series-7-text {
+	color: khaki;
+}
+.series-8 h3{
+	color: aquamarine;
+}
+.series-8-text {
+	color: wheat;
+}
+.series-z-title {
+	color: darkmagenta;
+}
+.series-z-text {
+	color: teal;
+}
+.footer-title {
+	font-family: 'Lato';
+	font-weight: 700;
+}
