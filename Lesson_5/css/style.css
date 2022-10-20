@@ -1,0 +1,133 @@
+/* Підключення шрифтів */
+/* В кінці додати &display=swap */
+
+/* --------------------------------------------------------------------------------------------------- */
+/* Підключення Шрифтів */
+/* Roboto(900,900itallic) */
+@import url("https://fonts.googleapis.com/css?family=Roboto:regular,900,900italic&display=swap");
+/* ----------------------------------------------------------------------------------------------------------- */
+/* Oswald(400,700) */
+@font-face {
+	font-family: "Oswald";
+	src: url("../fonts/Oswald-Regular.woff2") format("woff2"), url("../fonts/Oswald-Regular.woff") format("woff");
+	font-weight: 400;
+	font-style: normal;
+	font-display: swap;
+}
+@font-face {
+	font-family: "Oswald";
+	src: url("../fonts/Oswald-Bold.woff2") format("woff2"), url("../fonts/Oswald-Bold.woff") format("woff");
+	font-weight: 700;
+	font-style: normal;
+	font-display: swap;
+}
+/* Основні стилі */
+.wrapper {
+	height: 100%;
+	max-width: 800px;
+	margin: 0 auto;
+}
+.header {
+	margin: 0 0 50px 0;
+}
+.header-title {
+	font-family: "Roboto";
+	font-style: normal;
+	font-weight: 900;
+	text-align: center;
+	color: red;
+	margin: 0 0 30px 0;
+	text-decoration: overline;
+	text-shadow: 2px 2px 3px black;
+	text-transform: uppercase;
+}
+.nav {
+	font-family: "Oswald";
+	font-weight: 700;
+	text-shadow: 0 0 2px grey;
+}
+.nav-list {
+	text-align: right;
+	color: #56494e;
+}
+.list-italic {
+	font-style: italic;
+}
+.main {
+	font-family: "Oswald";
+	font-weight: 400;
+}
+.main-image {
+	margin-bottom: 40px;
+}
+.about {
+	text-transform: capitalize;
+}
+.about h2 {
+	text-align: center;
+	margin-bottom: 30px;
+	text-decoration: underline;
+	text-shadow: 0 0 5px black;
+}
+.about p {
+	margin-bottom: 20px;
+}
+
+.about-text-1,
+.about-text-2 {
+	color: #db323d;
+}
+span {
+	text-decoration: line-through;
+}
+.about-text-3 {
+	color: #a62639;
+}
+.about-text-4 {
+	color: #56494e;
+}
+.play {
+	text-transform: lowercase;
+}
+.play img {
+	width: 700px;
+	margin-bottom: 40px;
+}
+.play p {
+	margin-bottom: 20px;
+	color: #4e7d55;
+}
+.play-title {
+	text-align: center;
+	margin-bottom: 20px;
+	color: #0f3f49;
+	text-shadow: 0 0 3px black;
+}
+.music {
+	letter-spacing: 1px;
+	margin-bottom: 40px;
+}
+.music-title {
+	text-shadow: 0 0 10px black;
+	margin-bottom: 30px;
+}
+.music-text {
+	color: #5c415d;
+}
+.online {
+	white-space: nowrap;
+	margin-bottom: 20px;
+}
+.online img {
+	width: 700px;
+	padding: 20px;
+	margin-bottom: 30px;
+}
+.online-title {
+	color: #502d55;
+	margin-bottom: 20px;
+}
+.footer {
+	font-family: "Roboto";
+	font-weight: 900;
+}
