@@ -1,0 +1,536 @@
+/* * Підключення шрифтів */
+/* ! В кінці додати &display=swap */
+/* * Lato(400,700,900) */
+@import url("https://fonts.googleapis.com/css?family=Lato:regular,700,900&display=swap");
+/* ----------------------------------------------------------------------------------------------------------- */
+/* * Oswald(400,900) */
+@font-face {
+	font-family: "Oswald";
+	src: url("../fonts/Oswald-Regular.woff2") format("woff2"), url("../fonts/Oswald-Regular.woff") format("woff");
+	font-style: normal;
+	font-weight: 400;
+	font-display: swap;
+}
+@font-face {
+	font-family: "Oswald";
+	src: url("../fonts/Oswald-Bold.woff2") format("woff2"), url("../fonts/Oswald-Bold.woff") format("woff");
+	font-style: normal;
+	font-weight: 700;
+	font-display: swap;
+}
+/* ----------------------------------------------------------------------------------------------------------- */
+/* * Основні Стилі */
+/* * Блок header */
+.header {
+	max-width: 800px;
+	margin: 40px auto;
+}
+.title {
+	text-align: center;
+	color: #1e212c;
+	text-shadow: 1px 1px 5px #14397d;
+	font-size: 60px;
+	text-decoration: underline;
+}
+
+/* * Блок about */
+.about {
+	font-family: "Lato";
+	font-weight: 400;
+	font-size: 16px;
+	line-height: 160%;
+	color: #424551;
+	margin-bottom: 200px;
+}
+[class*="-container"] {
+	max-width: 1230px;
+	margin: 0 auto;
+	padding: 0 15px;
+}
+.about-title {
+	font-weight: 900;
+	font-size: 46px;
+	line-height: 130%;
+	color: #1e212c;
+}
+.about-title:not(:last-child) {
+	margin-bottom: 40px;
+}
+.about-text {
+	max-width: 600px;
+}
+.about-text:not(:last-child) {
+	margin-bottom: 48px;
+}
+.list-title {
+	font-weight: 700;
+	font-size: 28px;
+	line-height: 150%;
+	color: #1e212c;
+}
+.list-title:not(:last-child) {
+	margin-bottom: 24px;
+}
+.list li:not(:last-child) {
+	margin-bottom: 4px;
+}
+.list li::before {
+	content: "";
+	background: url("../img/arrowsvg.svg") 0 0 no-repeat;
+	height: 16px;
+	width: 16px;
+	display: inline-block;
+	margin-right: 16px;
+}
+
+/* * Блок curator */
+.curator {
+	font-family: "Lato";
+	font-weight: 400;
+	font-size: 16px;
+	line-height: 160%;
+	color: #424551;
+	margin-bottom: 100px;
+}
+.curator-title {
+	color: #1e212c;
+	letter-spacing: 1px;
+	text-transform: uppercase;
+	line-height: 150%;
+	font-weight: 700;
+}
+.curator-title:not(:last-child) {
+	margin-bottom: 8px;
+}
+.curator-name {
+	font-weight: 900;
+	font-size: 46px;
+	line-height: 130%;
+	color: #1e212c;
+}
+.curator-name:not(:last-child) {
+	margin-bottom: 16px;
+}
+.curator-subtitle {
+	font-size: 20px;
+	line-height: 150%;
+	color: #787a80;
+}
+.curator-subtitle:not(:last-child) {
+	margin-bottom: 32px;
+}
+.curator-list:not(:last-child) {
+	margin-bottom: 32px;
+}
+.list-star,
+.list-play,
+.list-profile {
+	font-weight: 700;
+}
+.list-star::before {
+	content: "";
+	background: url("../img/star.svg") 0 0 no-repeat;
+	height: 16px;
+	width: 16px;
+	margin-right: 8px;
+	display: inline-block;
+}
+.list-play::before {
+	content: "";
+	background: url("../img/play.svg") 0 0 no-repeat;
+	height: 16px;
+	width: 16px;
+	margin-right: 8px;
+	display: inline-block;
+}
+.list-profile::before {
+	content: "";
+	background: url("../img/profile.svg") 0 0 no-repeat;
+	height: 16px;
+	width: 16px;
+	display: inline-block;
+	margin-right: 8px;
+}
+.curator-text {
+	max-width: 600px;
+}
+
+/* * Блок practice */
+.practice {
+	font-family: "Oswald";
+	font-size: 20px;
+	font-weight: 400;
+	margin-bottom: 100px;
+}
+.block-buttons {
+	text-align: center;
+	padding: 20px;
+	background: #502d55;
+	color: #f8f4e9;
+	font-size: 30px;
+	font-weight: 700;
+	border-radius: 20px;
+	margin-bottom: 30px;
+}
+.block-buttons a:not(:last-child) {
+	margin-right: 100px;
+}
+.block-buttons a:nth-child(1):hover {
+	text-shadow: 5px 5px 5px black;
+	color: #f6dbc0;
+}
+.block-buttons a:nth-child(2):hover {
+	text-shadow: 5px 5px 5px black;
+	color: #935073;
+}
+.block-buttons a:nth-child(3):hover {
+	text-shadow: 5px 5px 5px black;
+	color: #be375f;
+}
+.block-1 {
+	background: #f6dbc0;
+	display: none;
+	padding: 30px;
+	text-align: center;
+	border-radius: 20px;
+}
+.block-1:target {
+	display: block;
+}
+.block-1 a:not(:last-child) {
+	margin-right: 100px;
+}
+.block-hover {
+	color: #4d4141;
+	font-size: 30px;
+	padding: 10px;
+	border-radius: 10px;
+}
+.block-hover:hover {
+	box-shadow: 1px 1px 2px black;
+	color: #be375f;
+}
+.block-active {
+	color: #4d4141;
+	font-size: 30px;
+	padding: 10px;
+	border-radius: 10px;
+}
+.block-active:hover {
+	box-shadow: 2px 2px 5px black;
+}
+.block-active:active {
+	box-shadow: 1px 1px 2px black;
+}
+.block-focus {
+	color: #4d4141;
+	font-size: 30px;
+	padding: 10px;
+	border-radius: 10px;
+	border: none;
+}
+.block-focus:focus {
+	border: 5px solid black;
+	color: #fe830c;
+}
+.block-2 {
+	background: #935073;
+	display: none;
+	padding: 20px;
+	border-radius: 20px;
+}
+.block-2 * > :not(:last-child) {
+	margin-bottom: 20px;
+}
+.block-2:target {
+	display: block;
+}
+.child div:first-of-type {
+	color: wheat;
+}
+.child > :nth-child(odd) {
+	box-shadow: 1px 1px 5px black;
+}
+.child > :last-child {
+	color: #fe830c;
+}
+.child > :nth-child(even) {
+	box-shadow: 1px 1px 5px wheat;
+}
+.first,
+.second,
+.third,
+.fourth {
+	text-align: center;
+	max-width: 150px;
+	margin: 0 auto;
+	padding: 10px;
+	font-size: 25px;
+	border-radius: 5px;
+}
+.block-3 {
+	background: #be375f;
+	display: none;
+}
+.block-3:target {
+	display: block;
+	padding: 20px;
+	border-radius: 20px;
+}
+.block-3 > :not(:last-child) {
+	margin-bottom: 30px;
+}
+.before,
+.after {
+	text-align: center;
+	color: #f8f4e9;
+	font-size: 30px;
+}
+.before::before {
+	content: "";
+	height: 5px;
+	width: 50px;
+	background: #1e212c;
+	display: inline-block;
+	margin: 0 5px 8px 0;
+}
+.after::after {
+	content: "";
+	height: 5px;
+	width: 50px;
+	background: #1e212c;
+	display: inline-block;
+	margin: 0 0 8px 5px;
+}
+
+/* * Блок game */
+.game {
+	margin-bottom: 100px;
+}
+.game-button {
+	padding: 10px;
+	background-color: #86f5ff;
+	border-radius: 10px;
+	box-shadow: 2px 2px 5px black;
+	display: inline-block;
+	margin-bottom: 20px;
+}
+.game-button:hover {
+	box-shadow: 1px 1px 2px black;
+	margin-top: 2px;
+	margin-bottom: 20px;
+}
+.game-body {
+	background-color: #635ad9;
+	padding: 20px;
+	display: none;
+}
+.game-body:target {
+	display: block;
+}
+.line-1 {
+	height: 100px;
+	width: 40px;
+	background: #4d4141;
+	margin-left: 50px;
+}
+.line-2 {
+	width: 200px;
+	height: 40px;
+	background: #4d4141;
+	margin-left: 50px;
+	visibility: hidden;
+}
+.line-3 {
+	height: 200px;
+	width: 30px;
+	background: #4d4141;
+	margin-left: 220px;
+	visibility: hidden;
+}
+.line-4 {
+	height: 30px;
+	width: 200px;
+	background: #4d4141;
+	margin-left: 220px;
+	visibility: hidden;
+}
+.line-5 {
+	width: 30px;
+	height: 200px;
+	background: #4d4141;
+	margin: -200px 0 0 400px;
+	visibility: hidden;
+}
+.line-6 {
+	height: 30px;
+	width: 200px;
+	background: #4d4141;
+	margin: -200px 0 0 400px;
+	visibility: hidden;
+}
+.line-7 {
+	height: 200px;
+	width: 30px;
+	background: #4d4141;
+	margin: -30px 0 0 580px;
+	visibility: hidden;
+}
+.line-8 {
+	height: 20px;
+	width: 200px;
+	background: #4d4141;
+	margin: 0 0 0 580px;
+	visibility: hidden;
+}
+.line-9 {
+	height: 200px;
+	width: 20px;
+	background: #4d4141;
+	margin: 0 0 0 760px;
+	visibility: hidden;
+}
+.line-10 {
+	height: 20px;
+	width: 200px;
+	background: #4d4141;
+	margin: 0 0 0 580px;
+	visibility: hidden;
+}
+.line-11 {
+	height: 80px;
+	width: 20px;
+	background: #4d4141;
+	margin: -80px 0 0 580px;
+	visibility: hidden;
+}
+.line-12 {
+	height: 20px;
+	width: 200px;
+	background: #4d4141;
+	margin: -80px 0 0 380px;
+	visibility: hidden;
+}
+.line-13 {
+	height: 200px;
+	width: 20px;
+	background: #4d4141;
+	margin: 0 0 0 380px;
+	visibility: hidden;
+}
+.line-14 {
+	width: 200px;
+	height: 20px;
+	background: #4d4141;
+	margin: 0 0 0 380px;
+	visibility: hidden;
+}
+.line-15 {
+	height: 80px;
+	width: 20px;
+	background: #4d4141;
+	margin: -80px 0 0 580px;
+	visibility: hidden;
+}
+.line-16 {
+	width: 200px;
+	height: 20px;
+	background: #4d4141;
+	margin: -80px 0 0 580px;
+	visibility: hidden;
+}
+.line-17 {
+	height: 200px;
+	width: 20px;
+	background: #4d4141;
+	margin: 0 0 0 760px;
+	visibility: hidden;
+}
+.line-18 {
+	background: #86f5ff;
+	text-align: center;
+	font-family: "Oswald";
+	font-weight: 400;
+	font-size: 24px;
+	padding: 10px;
+	border-radius: 10px;
+	box-shadow: 0 0 10px 10px #5c1565;
+	visibility: hidden;
+}
+
+.line-1:hover + .line-2,
+.line-2:hover {
+	visibility: visible;
+}
+.line-2:hover + .line-3,
+.line-3:hover {
+	visibility: visible;
+}
+.line-3:hover + .line-4,
+.line-4:hover {
+	visibility: visible;
+}
+.line-4:hover + .line-5,
+.line-5:hover {
+	visibility: visible;
+}
+.line-5:hover + .line-6,
+.line-6:hover {
+	visibility: visible;
+}
+.line-6:hover + .line-7,
+.line-7:hover {
+	visibility: visible;
+}
+.line-7:hover + .line-8,
+.line-8:hover {
+	visibility: visible;
+}
+.line-8:hover + .line-9,
+.line-9:hover {
+	visibility: visible;
+}
+.line-9:hover + .line-10,
+.line-10:hover {
+	visibility: visible;
+}
+.line-10:hover + .line-11,
+.line-11:hover {
+	visibility: visible;
+}
+.line-11:hover + .line-12,
+.line-12:hover {
+	visibility: visible;
+}
+.line-12:hover + .line-13,
+.line-13:hover {
+	visibility: visible;
+}
+.line-13:hover + .line-14,
+.line-14:hover {
+	visibility: visible;
+}
+.line-14:hover + .line-15,
+.line-15:hover {
+	visibility: visible;
+}
+.line-15:hover + .line-16,
+.line-16:hover {
+	visibility: visible;
+}
+.line-16:hover + .line-17,
+.line-17:hover {
+	visibility: visible;
+}
+.line-17:hover + .line-18,
+.line-18:hover {
+	visibility: visible;
+}
+/* * Блок footer */
+.footer {
+	text-align: center;
+}
+.footer-text {
+	font-size: 40px;
+	text-shadow: 1px 1px 5px #14397d;
+}
