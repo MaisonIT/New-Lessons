@@ -1,0 +1,190 @@
+/* * Підключення шрифтів */
+/* ! В кінці додати &display=swap */
+@import url("https://fonts.googleapis.com/css?family=Oswald:700&display=swap");
+/* ----------------------------------------------------------------------------------------------------------- */
+/* * Основні Стилі */
+body {
+	background: #4d4141;
+}
+.wrapper {
+	position: relative;
+	overflow: hidden;
+	min-height: 100%;
+}
+.header {
+	margin-bottom: 200px;
+}
+.header__title {
+	font-family: "Oswald";
+	font-weight: 700;
+	text-align: center;
+	font-size: 50px;
+	color: #f9f3e7;
+	text-shadow: 1px 1px 5px black;
+}
+
+.sky {
+	background: linear-gradient(0deg, rgba(34, 193, 195, 1) 0%, rgba(7, 0, 70, 1) 100%);
+	width: 100%;
+	height: 500px;
+}
+
+.sky__moon {
+	height: 250px;
+	width: 250px;
+	border-radius: 50%;
+	background: radial-gradient(circle, rgba(115, 122, 156, 1) 0%, rgba(118, 138, 140, 1) 100%);
+	position: relative;
+	top: 20px;
+	left: 40px;
+	box-shadow: 2px 0 10px 0 white;
+}
+.sky__clouds {
+	transform: translate(500px, -100px);
+	display: inline-block;
+	margin-right: 100px;
+}
+.cloud-1 {
+	transform: translate(-20px, -130px);
+	box-shadow: inset 2px 0 10px 0 black;
+	height: 100px;
+	width: 200px;
+	border-radius: 52% 48% 45% 55% / 56% 50% 50% 44%;
+	background-color: white;
+}
+.cloud-2 {
+	transform: translate(50px, 30px);
+	box-shadow: inset 2px 0 10px 0 black;
+	border-radius: 45% 55% 79% 21% / 10% 78% 22% 90%;
+	background-color: white;
+	height: 100px;
+	width: 200px;
+}
+.cloud-3 {
+	position: relative;
+	top: -100px;
+	box-shadow: inset 2px 0 10px 0 black;
+	border-radius: 41% 59% 18% 82% / 10% 78% 22% 90%;
+	background-color: white;
+	height: 100px;
+	width: 200px;
+}
+.road {
+	background: radial-gradient(circle, rgba(113, 113, 113, 1) 0%, rgba(73, 77, 82, 1) 100%);
+	width: 100%;
+	height: 200px;
+}
+.car {
+	position: relative;
+}
+.car__body {
+	position: absolute;
+	top: -100px;
+	left: 500px;
+	z-index: 2;
+	height: 200px;
+	width: 1000px;
+	border-radius: 96% 4% 83% 17% / 100% 42% 58% 0%;
+	background: radial-gradient(circle, rgba(201, 4, 4, 1) 0%, rgba(130, 0, 7, 1) 100%);
+	transform: rotate(3deg);
+	box-shadow: 0 20px 10px 0 blue;
+}
+.car__body::after {
+	content: "";
+	height: 30px;
+	width: 5px;
+	display: inline-block;
+	position: relative;
+	z-index: 2;
+	background: linear-gradient(0deg, rgba(149, 4, 4, 1) 0%, rgba(252, 6, 6, 1) 100%);
+	transform: translate(970px, -65px) rotate(-35deg);
+	border-radius: 5px;
+	box-shadow: 4px 0 20px 10px red;
+}
+.car__body::before {
+	content: "";
+	height: 100px;
+	width: 10px;
+	display: inline-block;
+	background: linear-gradient(90deg, rgba(255, 255, 255, 1) 0%, rgba(0, 219, 255, 1) 50%, rgba(255, 255, 255, 1) 100%);
+	transform: translate(100px, 65px) rotate(65deg);
+	border-radius: 56% 44% 38% 62% / 100% 0% 100% 0%;
+	box-shadow: 0 5px 20px 10px white;
+}
+.car__door {
+	position: relative;
+	z-index: 3;
+	height: 150px;
+	width: 380px;
+	border: solid 2px grey;
+	transform: translate(900px, -78px) rotate(-3deg);
+	border-radius: 75% 25% 58% 42% / 0% 87% 13% 100%;
+}
+.door__handle {
+	height: 5px;
+	width: 60px;
+	background-color: grey;
+	transform: translate(250px, 20px);
+	border-radius: 2px;
+}
+.car__window {
+	border: solid 2px black;
+	border-radius: 82% 18% 28% 72% / 100% 100% 0% 0%;
+	height: 120px;
+	width: 500px;
+	background: radial-gradient(
+		circle,
+		rgba(220, 221, 230, 0.6474964985994398) 0%,
+		rgba(192, 202, 203, 0.6558998599439776) 100%
+	);
+	transform: translate(876px, -305px) rotate(-2deg);
+}
+.car__window-2 {
+	width: 5px;
+	height: 120px;
+	background-color: black;
+	transform: translate(1200px, -426px);
+}
+
+.spoiler__body {
+	height: 80px;
+	width: 20px;
+	background-color: black;
+	transform: translate(1440px, -510px) rotate(10deg);
+}
+.spoiler__wing {
+	height: 20px;
+	width: 100px;
+	background-color: black;
+	border-radius: 51% 49% 49% 51% / 100% 100% 0% 0%;
+	transform: translate(1410px, -607px) rotate(190deg);
+}
+.car__wheels {
+	position: relative;
+	z-index: 2;
+}
+.wheel-1 {
+	height: 160px;
+	width: 160px;
+	border-radius: 50%;
+	background: url("../img/wheel.jpg") 1px 4px no-repeat;
+	background-size: 160px;
+	transform: translate(660px, -505px);
+}
+.wheel-2 {
+	height: 160px;
+	width: 160px;
+	border-radius: 50%;
+	background: url("../img/wheel.jpg") 1px 4px no-repeat;
+	background-size: 160px;
+	transform: translate(1300px, -674px);
+}
+.car__exhoust {
+	position: relative;
+	z-index: 2;
+	transform: translate(830px, -762px) rotate(2deg);
+	border-radius: 80px 20px 80px 20px;
+	width: 100px;
+	height: 40px;
+	background: url("../img/exhoust.jpg") 0 0 no-repeat;
+}
