@@ -80,7 +80,7 @@ body {
 .car__body {
 	position: absolute;
 	top: -100px;
-	left: 500px;
+	left: 300px;
 	z-index: 2;
 	height: 200px;
 	width: 1000px;
@@ -117,7 +117,7 @@ body {
 	height: 150px;
 	width: 380px;
 	border: solid 2px grey;
-	transform: translate(900px, -78px) rotate(-3deg);
+	transform: translate(700px, -78px) rotate(-3deg);
 	border-radius: 75% 25% 58% 42% / 0% 87% 13% 100%;
 }
 .door__handle {
@@ -137,27 +137,27 @@ body {
 		rgba(220, 221, 230, 0.6474964985994398) 0%,
 		rgba(192, 202, 203, 0.6558998599439776) 100%
 	);
-	transform: translate(876px, -305px) rotate(-2deg);
+	transform: translate(676px, -305px) rotate(-2deg);
 }
 .car__window-2 {
 	width: 5px;
 	height: 120px;
 	background-color: black;
-	transform: translate(1200px, -426px);
+	transform: translate(1000px, -426px);
 }
 
 .spoiler__body {
 	height: 80px;
 	width: 20px;
 	background-color: black;
-	transform: translate(1440px, -510px) rotate(10deg);
+	transform: translate(1240px, -510px) rotate(10deg);
 }
 .spoiler__wing {
 	height: 20px;
 	width: 100px;
 	background-color: black;
 	border-radius: 51% 49% 49% 51% / 100% 100% 0% 0%;
-	transform: translate(1410px, -607px) rotate(190deg);
+	transform: translate(1210px, -607px) rotate(190deg);
 }
 .car__wheels {
 	position: relative;
@@ -169,7 +169,7 @@ body {
 	border-radius: 50%;
 	background: url("../img/wheel.jpg") 1px 4px no-repeat;
 	background-size: 160px;
-	transform: translate(660px, -505px);
+	transform: translate(460px, -505px);
 }
 .wheel-2 {
 	height: 160px;
@@ -177,12 +177,12 @@ body {
 	border-radius: 50%;
 	background: url("../img/wheel.jpg") 1px 4px no-repeat;
 	background-size: 160px;
-	transform: translate(1300px, -674px);
+	transform: translate(1100px, -674px);
 }
 .car__exhoust {
 	position: relative;
 	z-index: 2;
-	transform: translate(830px, -762px) rotate(2deg);
+	transform: translate(630px, -762px) rotate(2deg);
 	border-radius: 80px 20px 80px 20px;
 	width: 100px;
 	height: 40px;
