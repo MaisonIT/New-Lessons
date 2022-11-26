@@ -1,0 +1,393 @@
+/* * Підключення шрифтів */
+/* ! В кінці додати &display=swap */
+@import url("https://fonts.googleapis.com/css?family=Lato:regular,700,900&display=swap");
+/* ----------------------------------------------------------------------------------------------------------- */
+/* * Основні Стилі */
+body {
+	font-family: "Lato";
+	background: #f5ee9e;
+}
+
+/* * Обмежуючий контейнер */
+[class*="__container"] {
+	max-width: 800px;
+	margin: 0 auto;
+}
+
+.wrapper {
+	position: relative;
+	overflow: hidden;
+	min-height: 100%;
+	display: flex;
+	flex-direction: column;
+}
+.wrapper > main {
+	flex-grow: 1;
+}
+
+/* *  Основні стилі */
+.header__title {
+	text-align: center;
+	padding: 25px;
+	font-size: 40px;
+	font-weight: 900;
+	text-shadow: 2px 2px 5px #eef1fb;
+}
+.practice {
+	margin-bottom: 100px;
+}
+.practice__container h2 {
+	text-align: center;
+	font-size: 25px;
+	font-weight: 700;
+	color: #2e5266;
+	text-shadow: 2px 2px 5px #eef1fb;
+	margin-bottom: 30px;
+}
+
+.block {
+	max-width: 600px;
+	margin: 0 auto;
+	border-radius: 20px;
+	background: #373f51;
+	text-align: center;
+	font-size: 23px;
+	color: #d05d38;
+	border: 5px solid #3b1f2b;
+}
+.block:not(:last-child) {
+	margin-bottom: 50px;
+}
+.block:nth-of-type(2) {
+	background: #373f51;
+	display: flex;
+}
+.block-inline {
+	text-align: center;
+}
+.block-inline .block {
+	background: #373f51;
+	display: inline-flex;
+}
+.block:nth-of-type(4) {
+	background: #2e5266;
+	max-width: 200px;
+	display: flex;
+}
+.block:nth-of-type(5) {
+	background: #2e5266;
+	max-width: 300px;
+	display: flex;
+	flex-wrap: wrap;
+}
+.block:nth-of-type(6) {
+	background: #2e5266;
+	max-width: 300px;
+	display: flex;
+	flex-wrap: wrap-reverse;
+}
+.block:nth-of-type(7) {
+	background: #f8b1c3;
+	display: flex;
+}
+.block:nth-of-type(8) {
+	background: #f8b1c3;
+	display: flex;
+	flex-direction: row-reverse;
+}
+.block:nth-of-type(9) {
+	background: #f8b1c3;
+	display: flex;
+	flex-direction: column;
+}
+.block:nth-of-type(10) {
+	background: #f8b1c3;
+	display: flex;
+	flex-direction: column-reverse;
+}
+.block:nth-of-type(11) {
+	background: #2c273f;
+	display: flex;
+}
+.block:nth-of-type(12) {
+	background: #2c273f;
+	display: flex;
+	justify-content: flex-end;
+}
+.block:nth-of-type(13) {
+	background: #2c273f;
+	display: flex;
+	justify-content: center;
+}
+.block:nth-of-type(14) {
+	background: #2c273f;
+	display: flex;
+	justify-content: space-between;
+}
+.block:nth-of-type(15) {
+	background: #2c273f;
+	display: flex;
+	justify-content: space-around;
+}
+.block:nth-of-type(16) {
+	background: #2c273f;
+	display: flex;
+	justify-content: space-evenly;
+}
+.block:nth-of-type(17) {
+	background: #041e41;
+	display: flex;
+}
+.block:nth-of-type(18) {
+	background: #041e41;
+	height: 200px;
+	display: flex;
+	align-items: flex-start;
+}
+.block:nth-of-type(19) {
+	background: #041e41;
+	display: flex;
+	height: 200px;
+	align-items: flex-end;
+}
+.block:nth-of-type(20) {
+	background: #041e41;
+	display: flex;
+	align-items: center;
+	height: 200px;
+}
+.block:nth-of-type(21) {
+	background: #041e41;
+	display: flex;
+	height: 200px;
+	align-items: baseline;
+}
+.block__item--fs {
+	font-size: 40px;
+}
+.block:nth-of-type(22) {
+	background: #f45e70;
+	color: #2c273f;
+	display: flex;
+}
+.block:nth-of-type(23) {
+	background: #f45e70;
+	color: #2c273f;
+	display: flex;
+}
+.item-block:nth-of-type(1) {
+	order: 3;
+}
+.item-block:nth-of-type(2) {
+	order: 4;
+}
+.item-block:nth-of-type(3) {
+	order: 1;
+}
+.item-block:nth-of-type(4) {
+	order: 2;
+}
+.block:nth-of-type(24) {
+	background: #8d99ae;
+	display: flex;
+	height: 200px;
+}
+.block:nth-of-type(25) {
+	background: #8d99ae;
+	display: flex;
+	height: 200px;
+}
+.block__item--start {
+	align-self: flex-start;
+}
+.block:nth-of-type(26) {
+	background: #8d99ae;
+	display: flex;
+	height: 200px;
+}
+.block__item--end {
+	align-self: flex-end;
+}
+.block:nth-of-type(27) {
+	background: #8d99ae;
+	display: flex;
+	height: 200px;
+}
+.block__item--center {
+	align-self: center;
+}
+.block:nth-of-type(28) {
+	background: #093a3e;
+	display: flex;
+}
+.block__item--basis {
+	flex-basis: 200px;
+}
+.block__item--basis-1 {
+	flex-basis: 400px;
+}
+.block:nth-of-type(29) {
+	background: #356c19;
+	display: flex;
+}
+.block:nth-of-type(30) {
+	background: #356c19;
+	display: flex;
+}
+.block__item--grow {
+	flex-grow: 1;
+}
+.block:nth-of-type(31) {
+	background: #46467a;
+	max-width: 400px;
+	display: flex;
+}
+.block__item--shrink {
+	flex-basis: 200px;
+	flex-shrink: 1;
+}
+.block__item--shrink-1 {
+	flex-basis: 300px;
+	flex-shrink: 1;
+}
+.block:nth-of-type(32) {
+	background: #46467a;
+	max-width: 400px;
+	display: flex;
+}
+.block__item--shrink-2 {
+	flex-basis: 200px;
+	flex-shrink: 0;
+}
+.block__item--shrink-3 {
+	flex-basis: 300px;
+	flex-shrink: 0;
+}
+.block:nth-of-type(33) {
+	background: #db162f;
+	color: #2c273f;
+	display: flex;
+}
+.block__item--flex {
+	flex: 1 1 50%;
+}
+.block__item {
+	padding: 10px;
+	border: 2px solid #eef1fb;
+	border-radius: 20px;
+}
+/* * Приклади */
+.example {
+	margin-bottom: 100px;
+}
+/* * Приклад 1 */
+.example-1 {
+	display: flex;
+	flex-direction: column;
+	align-items: flex-start;
+	margin-bottom: 50px;
+}
+.example-1__title {
+	font-size: 30px;
+}
+.example-1__title:not(:last-child) {
+	margin-bottom: 30px;
+}
+.example-1__link {
+	color: #356c19;
+	font-size: 25px;
+}
+.example-1__link:not(:last-child) {
+	margin-bottom: 40px;
+}
+.example-1__text {
+	font-size: 20px;
+}
+.example-1__text:not(:last-child) {
+	margin-bottom: 20px;
+}
+
+/* * Приклад 2 */
+.example-2 {
+	margin-bottom: 50px;
+}
+.example-2__body {
+	background: #041e41;
+}
+.example-2__items {
+	display: flex;
+	margin: 0 -15px;
+}
+.example-2__item {
+	padding: 0 15px;
+	flex: 0 1 33.333%;
+	display: flex;
+}
+.item-example-2 {
+	background: #093a3e;
+	padding: 10px;
+	display: flex;
+	flex-direction: column;
+	row-gap: 15px;
+}
+.item-example-2__img {
+	max-width: 300px;
+}
+.item-example-2__img img {
+	max-width: 100%;
+}
+.item-example-2__text {
+	flex-grow: 1;
+}
+.item-example-2__link {
+	color: white;
+}
+/* * Приклад 3 */
+.example-3 {
+	margin-bottom: 50px;
+}
+.example-3__img {
+	max-width: 150px;
+	float: left;
+	margin-right: 20px;
+}
+
+/* * Приклад 4 */
+.example-4 {
+}
+.example-4__body {
+	background: #2c273f;
+}
+.example-4__items {
+	display: flex;
+	flex-direction: column;
+	row-gap: 20px;
+}
+
+.item-example-4 {
+	background: #3b1f2b;
+	padding: 10px;
+	display: flex;
+	gap: 20px;
+}
+.item-example-4:nth-child(even) {
+	flex-direction: row-reverse;
+}
+.item-example-4__img {
+	flex: 0 0 200px;
+}
+.item-example-4__img img {
+	max-width: 100%;
+}
+.item-example__text {
+	line-height: 1.5;
+}
+
+/* * Футер */
+.footer {
+}
+.footer__title {
+	padding: 20px;
+	text-align: center;
+	background: #46467a;
+}
