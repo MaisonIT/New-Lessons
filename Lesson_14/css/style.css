@@ -253,7 +253,6 @@ body {
 .block:nth-of-type(32) {
 	background: #46467a;
 	max-width: 400px;
-	margin: 0 auto;
 	display: flex;
 }
 .block__item--shrink-2 {
